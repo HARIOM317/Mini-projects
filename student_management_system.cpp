@@ -26,64 +26,64 @@ public:
 
     void Get_data()
     {
-        cout << "\033[91;107;1m ROLL NUMBER :    ";
+        cout << "ROLL NUMBER :    ";
         cin >> roll_no;
-        cout << "\033[91;107;1m NAME :   ";
+        cout << "NAME :   ";
         cin.ignore();
         cin.getline(name, 30);
-        cout << "\033[91;107;1m GENDER :   ";
+        cout << "GENDER :   ";
         cin >> gender;
-        cout << "\033[91;107;1m AGE :   ";
+        cout << "AGE :   ";
         cin >> age;
-        cout << "\033[91;107;1m STANDARD :   ";
+        cout << "STANDARD :   ";
         cin >> standard;
-        cout << "\033[91;107;1m PERCENTAGE :   ";
+        cout << "PERCENTAGE :   ";
         cin >> marks;
-        cout << "\033[91;107;1m MOBILE NUMBER :   ";
+        cout << "MOBILE NUMBER :   ";
         cin >> mobile_no;
     }
 
     void Show_data()
     {
-        cout << "\033[94;107;1m  _______________**********_______________ \n\n";
-        cout << "\033[96;107;1m   Roll Number = " << roll_no << endl;
-        cout << "\033[96;107;1m   Name = " << name << endl;
-        cout << "\033[96;107;1m   Gender = " << gender << endl;
-        cout << "\033[96;107;1m   Age = " << age << endl;
-        cout << "\033[96;107;1m   Standard = " << standard << endl;
-        cout << "\033[96;107;1m   Marks = " << marks << endl;
-        cout << "\033[96;107;1m   Mobile Number = " << mobile_no << "\n\n";
-        cout << "\033[94;107;1m  _______________          _______________ \n";
-        cout << "\033[94;107;1m                 **********                \n\n";
+        cout << " _______________**********_______________ \n\n";
+        cout << "  Roll Number = " << roll_no << endl;
+        cout << "  Name = " << name << endl;
+        cout << "  Gender = " << gender << endl;
+        cout << "  Age = " << age << endl;
+        cout << "  Standard = " << standard << endl;
+        cout << "  Marks = " << marks << endl;
+        cout << "  Mobile Number = " << mobile_no << "\n\n";
+        cout << " _______________          _______________ \n";
+        cout << "                **********                \n\n";
     }
 
     void Modify_data()
     {
         system("cls");
-        cout << "\033[91;107;1m  ______________________________________________  \n"
-             << "\033[91;107;1m |                                              | \n"
-             << "\033[90;107;1m    Roll Number = " << roll_no << endl
-             << "\033[91;107;1m |______________________________________________| \n";
+        cout << " ______________________________________________  \n"
+             << "|                                              | \n"
+             << "   Roll Number = " << roll_no << endl
+             << "|______________________________________________| \n";
 
         cout << "\n\n";
 
-        cout << "\033[90;107;1m      _____________________________________  \n"
-             << "\033[90;107;1m     |                                     | \n"
-             << "\033[91;107;1m     |  ***Enter New Record of Student***  | \n"
-             << "\033[90;107;1m     |_____________________________________| \n\n";
+        cout << " _____________________________________  \n"
+             << "|                                     | \n"
+             << "|  ***Enter New Record of Student***  | \n"
+             << "|_____________________________________| \n\n";
 
-        cout << "\033[95;107;1m Name :   ";
+        cout << "Name :   ";
         cin.ignore();
         cin.getline(name, 20);
-        cout << "\033[95;107;1m Gender :   ";
+        cout << "Gender :   ";
         cin >> gender;
-        cout << "\033[95;107;1m Age :   ";
+        cout << "Age :   ";
         cin >> age;
-        cout << "\033[95;107;1m Standard :   ";
+        cout << "Standard :   ";
         cin >> standard;
-        cout << "\033[95;107;1m Marks :   ";
+        cout << "Marks :   ";
         cin >> marks;
-        cout << "\033[95;107;1m Mobile Number :   ";
+        cout << "Mobile Number :   ";
         cin >> mobile_no;
     }
 
@@ -116,20 +116,20 @@ void heading()
 
 void menu()
 {
-    cout << "\033[91;107;1m      __________**********__________  \n"
-         << "\033[91;107;1m     |                              | \n"
-         << "\033[91;107;1m     |       Student's Record       | \n"
-         << "\033[91;107;1m     |__________          __________| \n"
-         << "\033[91;107;1m                **********            \n\n";
+    cout << " __________**********__________  \n"
+         << "|                              | \n"
+         << "|       Student's Record       | \n"
+         << "|__________          __________| \n"
+         << "           **********            \n\n";
 
-    cout << "\033[90;107;1m 0. Exit \n";
-    cout << "\033[90;107;1m 1. Resister New Student \n";
-    cout << "\033[90;107;1m 2. Show All Students \n";
-    cout << "\033[90;107;1m 3. Search a student by Roll Number \n";
-    cout << "\033[90;107;1m 4. Search a student by Name \n";
-    cout << "\033[90;107;1m 5. Modify Records \n";
-    cout << "\033[90;107;1m 6. Delete a Records \n\n";
-    cout << "\033[96;107;1m Enter Your Choice :  ";
+    cout << " 0. Exit \n";
+    cout << " 1. Resister New Student \n";
+    cout << " 2. Show All Students \n";
+    cout << " 3. Search a student by Roll Number \n";
+    cout << " 4. Search a student by Name \n";
+    cout << " 5. Modify Records \n";
+    cout << " 6. Delete a Records \n\n";
+    cout << " Enter Your Choice :  ";
 }
 
 int main()
@@ -151,7 +151,7 @@ int main()
             system("cls");
             s[n].Get_data();
             n++;
-            cout << "\033[95;107;1m \nRecord saved successfully...\n\n";
+            cout << "\nRecord saved successfully...\n\n";
             break;
 
         case 2:
@@ -167,10 +167,10 @@ int main()
             else
             {
                 system("cls");
-                cout << "\033[91;107;1m  ______________________  \n"
-                     << "\033[91;107;1m |                      | \n"
-                     << "\033[91;107;1m |  NO RECORD FOUND...  | \n"
-                     << "\033[91;107;1m |______________________| \n";
+                cout << " ______________________  \n"
+                     << "|                      | \n"
+                     << "|  NO RECORD FOUND...  | \n"
+                     << "|______________________| \n";
             }
 
             break;
@@ -178,7 +178,7 @@ int main()
         case 3:
             if (n > 0)
             {
-                cout << "\033[91;107;1m \nEnter Roll Number :   ";
+                cout << "\nEnter Roll Number :   ";
                 cin >> rn;
                 system("cls");
                 for (i = 0; i < n; i++)
@@ -194,10 +194,10 @@ int main()
             if (flag == 0)
             {
                 system("cls");
-                cout << "\033[91;107;1m  ______________________  \n"
-                     << "\033[91;107;1m |                      | \n"
-                     << "\033[91;107;1m |   NO DATA FOUND...   | \n"
-                     << "\033[91;107;1m |______________________| \n";
+                cout << " ______________________  \n"
+                     << "|                      | \n"
+                     << "|   NO DATA FOUND...   | \n"
+                     << "|______________________| \n";
             }
             break;
 
@@ -206,7 +206,7 @@ int main()
             if (n > 0)
             {
                 char nm[20];
-                cout << "\033[91;107;1m \nEnter Name :   ";
+                cout << "\nEnter Name :   ";
                 cin.ignore();
                 cin.getline(nm, 30);
                 system("cls");
@@ -225,10 +225,10 @@ int main()
             if (flag == 0)
             {
                 system("cls");
-                cout << "\033[91;107;1m  ______________________  \n"
-                     << "\033[91;107;1m |                      | \n"
-                     << "\033[91;107;1m |   NO DATA FOUND...   | \n"
-                     << "\033[91;107;1m |______________________| \n";
+                cout << " ______________________  \n"
+                     << "|                      | \n"
+                     << "|   NO DATA FOUND...   | \n"
+                     << "|______________________| \n";
             }
             break;
 
@@ -236,7 +236,7 @@ int main()
             if (n > 0)
             {
                 int pos;
-                cout << "\033[91;107;1m \nEnter Roll Number to Modify :   ";
+                cout << "\nEnter Roll Number to Modify :   ";
                 cin >> rn;
                 system("cls");
                 for (i = 0; i < n; i++)
@@ -244,9 +244,9 @@ int main()
                     if (rn == s[i].get_roll_no())
                     {
                         system("cls");
-                        cout << "\033[91;107;1m \nFollowing record will be modified...\n";
+                        cout << "\nFollowing record will be modified...\n";
                         s[i].Show_data();
-                        cout << "\033[95;107;1m \n\n ENTER NEW DATA! \n\n";
+                        cout << "\n\n ENTER NEW DATA! \n\n";
                         s[i].Modify_data();
                         flag++;
                     }
@@ -256,24 +256,24 @@ int main()
             if (flag == 0)
             {
                 system("cls");
-                cout << "\033[91;107;1m  ______________________  \n"
-                     << "\033[91;107;1m |                      | \n"
-                     << "\033[91;107;1m |   NO DATA FOUND...   | \n"
-                     << "\033[91;107;1m |______________________| \n";
+                cout << " ______________________  \n"
+                     << "|                      | \n"
+                     << "|   NO DATA FOUND...   | \n"
+                     << "|______________________| \n";
             }
             break;
 
         case 6:
             if (n > 0)
             {
-                cout << "\033[91;107;1m \nEnter Roll Number to delede a Record:   ";
+                cout << "\nEnter Roll Number to delede a Record:   ";
                 cin >> rn;
                 system("cls");
                 for (i = 0; i < n; i++)
                 {
                     if (rn == s[i].get_roll_no())
                     {
-                        cout << "\033[91;107;1m \nFollowing Data is Deleted...\n";
+                        cout << "\nFollowing Data is Deleted...\n";
                         s[i].Show_data();
                         flag++;
                         position = i;
@@ -290,20 +290,20 @@ int main()
             if (flag == 0)
             {
                 system("cls");
-                cout << "\033[91;107;1m  ______________________  \n"
-                     << "\033[91;107;1m |                      | \n"
-                     << "\033[91;107;1m |   NO DATA FOUND...   | \n"
-                     << "\033[91;107;1m |______________________| \n";
+                cout << " ______________________  \n"
+                     << "|                      | \n"
+                     << "|   NO DATA FOUND...   | \n"
+                     << "|______________________| \n";
             }
             break;
 
         default:
             system("cls");
-            cout << "\033[91;107;1m  ======================  \n"
-                 << "\033[91;107;1m |                      | \n"
-                 << "\033[91;107;1m |    Invalid Input!    | \n"
-                 << "\033[91;107;1m |                      | \n"
-                 << "\033[91;107;1m  ======================  \n";
+            cout << " ======================  \n"
+                 << "|                      | \n"
+                 << "|    Invalid Input!    | \n"
+                 << "|                      | \n"
+                 << " ======================  \n";
                  system("pause");
                  goto start;
 
